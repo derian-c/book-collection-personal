@@ -1,0 +1,12 @@
+<%= link_to "Back to Books", books_path %>
+<h1>Show Book</h1>
+<table>
+    <tr>
+        <th> Name </th>
+        <td> <%= @book.name %> </th>
+    </tr>
+</table>
+<div>
+<%= link_to("Edit", edit_book_path(@book)) %>
+<%= link_to("Delete", delete_book_path(@book)) %>
+</div>
