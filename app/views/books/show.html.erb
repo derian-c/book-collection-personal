@@ -1,5 +1,10 @@
 <%= link_to "Back to Books", books_path %>
 <h1>Show Book</h1>
+<% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+<% end %>
 <table>
     <tr>
         <th> Name </th>

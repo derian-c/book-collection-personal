@@ -1,5 +1,9 @@
 <h1>Book Collection</h1>
-
+<% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+<% end %>
 <table>
     <tr>
         <th> Name </th>
