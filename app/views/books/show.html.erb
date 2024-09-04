@@ -10,6 +10,18 @@
         <th> Name </th>
         <td> <%= @book.name %> </th>
     </tr>
+    <tr>
+        <th> Author </th>
+        <td> <%= @book.author %> </th>
+    </tr>
+    <tr>
+        <th> Price </th>
+        <td> <%= @book.price %> </th>
+    </tr>
+    <tr>
+        <th> Published Date </th>
+        <td> <%= @book.published_date %> </th>
+    </tr>
 </table>
 <div>
 <%= link_to("Edit", edit_book_path(@book)) %>
