@@ -1,0 +1,29 @@
+<%= link_to "Back to Books", books_path %>
+<h1>Show Book</h1>
+<% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+<% end %>
+<table>
+    <tr>
+        <th> Name </th>
+        <td> <%= @book.name %> </th>
+    </tr>
+    <tr>
+        <th> Author </th>
+        <td> <%= @book.author %> </th>
+    </tr>
+    <tr>
+        <th> Price </th>
+        <td> <%= @book.price %> </th>
+    </tr>
+    <tr>
+        <th> Published Date </th>
+        <td> <%= @book.published_date %> </th>
+    </tr>
+</table>
+<div>
+<%= link_to("Edit", edit_book_path(@book)) %>
+<%= link_to("Delete", delete_book_path(@book)) %>
+</div>
