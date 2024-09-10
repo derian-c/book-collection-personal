@@ -1,0 +1,9 @@
+<%= link_to "Back to Books", books_path %>
+<h1>Delete Book</h1>
+
+<%= form_for @book, method: "delete" do |f| %>
+<p> Are you sure you want to permanently delete this book? </p>
+<p> <%= @book.name %> </p>
+<%= f.submit("Delete Book") %>
+<% end %>
+
